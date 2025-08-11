@@ -1,0 +1,57 @@
+{
+  "covalent_api_key": "cqt_rQYkGgFvK3CcfjKw9K4gGBQmxyRK",
+  "chain_id": 1,
+  "metrics": {
+    "walletAge": {
+      "weight": 10,
+      "cap_months": 12
+    },
+    "gasSpent": {
+      "weight": 10,
+      "cap_eth": 0.5
+    },
+    "uniqueContracts": {
+      "weight": 20,
+      "cap": 50
+    },
+    "governanceVotes": {
+      "weight": 20,
+      "cap": 10
+    },
+    "defiActions": {
+      "weight": 20,
+      "cap": 10
+    },
+    "airdropsClaimed": {
+      "weight": 20,
+      "cap": 10
+    }
+  },
+  "badges": {
+    "Diamond": [
+      90,
+      100
+    ],
+    "Gold": [
+      75,
+      89
+    ],
+    "Silver": [
+      50,
+      74
+    ],
+    "Bronze": [
+      25,
+      49
+    ],
+    "Newbie": [
+      0,
+      24
+    ]
+  },
+  "thegraph_endpoints": {
+    "governance": "",
+    "airdrops": ""
+  },
+  "moralis_api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjQwMDhkMTc4LWQxNmItNDU4Yy05MTRkLWNlZjU1YzZmMjdiMyIsIm9yZ0lkIjoiNDY0MzAyIiwidXNlcklkIjoiNDc3NjY3IiwidHlwZUlkIjoiYTNhODc2MmUtYWRiNS00MDk1LWFmNmEtNDhmNGQ5ZTA4NDVkIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3NTQ4MTI3MjQsImV4cCI6NDkxMDU3MjcyNH0.ssV3d1p5s7iDcYT2rZtosJ8J_z1cuuNvF9bU5X8O2HY"
+}

@@ -1,0 +1,32 @@
+
+:root{
+  --bg:#0b1116;
+  --card:#081018;
+  --accent:#4BFFA5;
+  --muted:#9aa6a3;
+  --text:#e6f0ea;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071018 0%, #08121a 100%);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  -webkit-font-smoothing:antialiased;
+  padding:28px;
+}
+.container{max-width:980px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+h1{margin:0;color:var(--accent)}
+.btn{background:var(--accent);border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+main{margin-top:18px;display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.row{display:flex;justify-content:space-between;align-items:center}
+.badge{background:#0b1b14;border:1px solid rgba(75,255,165,0.12);padding:8px 12px;border-radius:999px;color:var(--accent);font-weight:700}
+.scoreCard{margin-top:12px}
+.progress{height:14px;background:#042022;border-radius:8px;overflow:hidden;margin:8px 0}
+.progress div{height:100%;background:linear-gradient(90deg,var(--accent),#23d98f)}
+#breakdown{margin-top:10px;color:var(--muted);font-size:14px}
+footer{margin-top:26px;color:var(--muted);text-align:center;font-size:13px}
+.muted{color:var(--muted)}
+pre{background:#051017;padding:12px;border-radius:8px;overflow:auto;color:var(--muted)}

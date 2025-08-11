@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ProofDrop — Reputation Dashboard (MVP)</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <!-- Web3Modal + WalletConnect (for mobile) -->
+  <script src="https://unpkg.com/web3modal@1.9.8/dist/index.js"></script>
+  <script src="https://unpkg.com/@walletconnect/web3-provider@1.7.8/dist/umd/index.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ProofDrop</h1>
+      <button id="connectBtn" class="btn">Connect Wallet</button>
+    </header>
+
+    <main>
+      <section class="card" id="walletCard" style="display:none">
+        <div class="row">
+          <div>
+            <h3 id="walletAddr">0x...</h3>
+            <p id="connectedChain">Network: —</p>
+          </div>
+          <div>
+            <div id="badge" class="badge">—</div>
+          </div>
+        </div>
+
+        <div id="scoreSection" class="scoreCard">
+          <h2>Score: <span id="scoreVal">—</span>/100</h2>
+          <div class="progress"><div id="scoreBar" style="width:0%"></div></div>
+          <div id="breakdown"></div>
+        </div>
+
+      </section>
+
+      <section class="card" id="instructions">
+        <h3>How it works</h3>
+        <ol>
+          <li>Connect your wallet using the popup (desktop or mobile wallets supported).</li>
+          <li>The dashboard reads on-chain activity via Covalent (client-side) and optional data sources.</li>
+          <li>Your ProofDrop score and badge are calculated using editable rules from <code>config.json</code>.</li>
+        </ol>
+        <p class="muted">Replace <code>YOUR_COVALENT_API_KEY</code> in <code>config.json</code> with your Covalent key before public use.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>ProofDrop MVP • GitHub Pages friendly • Built for testing</p>
+    </footer>
+  </div>
+
+  <script id="config" type="application/json" src="config.json"></script>
+  <script src="app.js"></script>
+</body>
+</html>
